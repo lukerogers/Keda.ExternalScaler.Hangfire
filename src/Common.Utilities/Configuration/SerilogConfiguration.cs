@@ -24,10 +24,10 @@ namespace Common.Utilities.Configuration
                     theme: AnsiConsoleTheme.Literate);
 
             // Optional logging to an HTTP endpoint such as Logstash
-            if (!string.IsNullOrEmpty(requestUri))
-            {
-                configuration.WriteTo.Http(requestUri);
-            }
+            //if (!string.IsNullOrEmpty(requestUri))
+            //{
+            //    configuration.WriteTo.Http(requestUri);
+            //}
 
             return configuration.CreateLogger();
         }
